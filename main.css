@@ -17,6 +17,7 @@ body {
 #main_container {
 	border-bottom: 10px solid transparent;
 	border-image: url(color_stripe.jpg) 400 stretch;
+
 }
 
 ul {
@@ -150,16 +151,24 @@ img.banner {
 	background-color: white;
 	position: absolute;
 	z-index: 2;
-	/* left: 80%; */
 	top: 0;
-	right: 6%;
+	right: 10%;
 	height: 100%;
-	width: 20%;
-	/* top: -300px; */
+	width: 30%;
 	background: -webkit-linear-gradient(bottom, rgba(255,255,255,0), rgba(255,255,255,1)); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(bottom, rgba(255,255,255,0), rgba(255,255,255,1)); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(bottom, rgba(255,255,255,0), rgba(255,255,255,1)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom, rgba(255,255,255,0.3), rgba(255,255,255,1)); /* Standard syntax (must be last) */
+    background: linear-gradient(to bottom, rgba(255,255,255,0.5), rgba(255,255,255,1)); /* Standard syntax (must be last) */
+	
+}
+
+.sale_text_header {
+	font-size: 5em;
+}
+
+.sale_text {
+	font-size: 1.7em;
+	color: black;
 }
 
 .products {
@@ -216,6 +225,11 @@ img.banner {
 .small-logo {
 	 position: relative;
 	 top: -1em;
+}
+
+#after_footer {
+	border: none;
+	background: transparent;
 }
 
 /*media queries*/
