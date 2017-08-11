@@ -1,6 +1,7 @@
 /*header styles*/
 body {
 	background-image: url("background.jpg");
+	font-family: Georgia, serif;
 }
 
 .stripe_top {
@@ -8,6 +9,7 @@ body {
 }
 
 .container {
+	max-width: 1020px;
 	background-color: white;
 	padding: 0 4em;
 	border-left: 0.1em solid #E3DEDE;
@@ -26,8 +28,11 @@ ul {
     padding: 0;
 }
 
+.allura {
+	font-family: 'Allura', cursive;
+}
 .handwriting {
-	font-family: 'Dancing Script', cursive;
+	font-family: 'Alex Brush', cursive;
 }
 .slogan {
 	font-size: 23px;
@@ -50,6 +55,11 @@ h1, h3, h4 {
 	font-family: 'Lora', serif;
 }
 
+h3 {
+	font-size: 2em;
+	margin-top: 0;
+}
+
 .search-bar {
 	float: right;
 	position: relative;
@@ -69,8 +79,8 @@ h1, h3, h4 {
 
 .button_chat {
 	position: absolute;
-	top: -10px;
-	left: 180px;
+	top: -6px;
+	left: 190px;
 }
 
 .input-group {
@@ -81,13 +91,20 @@ h1, h3, h4 {
 .input-group input { 
 	text-indent: 32px;
 }
+/*placeholders styles*/
+.form-control::-webkit-input-placeholder {
+    color: black;	
+	position: relative;
+	right: 3em;
+}
 
 .input-group .fa-search { 
   position: absolute;
-  top: 0px;
-  left: 170px;
-  font-size :20px;
-  color: gray;
+  top: 5px;
+  left: 150px;
+  font-size:20px;
+  font-weight: 300;
+  color: gray ;
 }
 
 li {
@@ -115,18 +132,16 @@ li {
 }
 
 #header-top, #header-middle, .products, .about_us {
-	padding: 1em;
+	padding: 0.5em;
 	border-bottom: 0.1em solid #E3DEDE;
 }
 
-#main-navigation ul li {
-	padding: 0.2em;
-	margin: 0 0.8em;
+#main-navigation ul li:hover {
+	background-color: #F0F0F0;
 	
 }
-
-#main-navigation ul li:hover {
-	background-color: #ccc;
+.nav>li>a {
+	padding: 1em 0.8em;
 }
 
 .navbar .navbar-nav {
@@ -163,11 +178,13 @@ img.banner {
 }
 
 .sale_text_header {
-	font-size: 5em;
+	font-size: 4em;
+	text-shadow: 1px 1px white;
+	    line-height: 1;
 }
 
 .sale_text {
-	font-size: 1.7em;
+	font-size: 2em;
 	color: black;
 }
 
@@ -178,12 +195,14 @@ img.banner {
 .product_img {
 	border: 0.1em solid #E3DEDE;
 	padding: 1em;
-	
 	width: auto;
 }
-
 .featured_products {
-	padding: 0.1em 0.5em;
+	padding: 0.1em 1em;
+}
+
+.featured_text {
+	font-size: 1.6em;
 }
 .about_us {
 	padding: 1em;
@@ -201,7 +220,7 @@ img.banner {
 /*footer*/
 .col_footer {
 	float: left;
-	padding: 0 0.3em;
+	padding: 0 0.2em;
 }
 .fa-facebook-official {
 	color: #3B5998;
@@ -219,7 +238,7 @@ img.banner {
 
 .fa {
 	font-size:30px;
-	padding: 0.2em;
+	padding: 0.1em;
 }
 
 .small-logo {
@@ -248,18 +267,18 @@ img.banner {
    }
    
    .mobile_menu_footer_plus {
-	   float: right;
+	   right: -90%;
 	   top: -30px;
    }
    
    .container {
-	   margin :0;
-	   padding: 0;
+	   padding: 1em;
    }
    
    .sale {
 	   position: static;
 	   width: 100%;
+	   max-height: 35em;
    }
    
    .small-logo {
@@ -274,7 +293,7 @@ img.banner {
    .copyright {
 	   text-align:center;
 	   position: relative;
-	   top: 7em;;
+	   top: 8em;;
    }
    
    .ae_logo {
@@ -282,5 +301,34 @@ img.banner {
 	 margin: 0 auto;
 	 position: relative;
 	 top: 3em;
+   }
+   
+   .navbar-toggle {
+		position: fixed;
+		right: 0px;
+		top: 0px;
+   }
+}
+
+@media only screen and (max-width: 992px) {
+	.sale_text_header {
+	font-size: 2.5em;
+	text-shadow: 1px 1px white;
+	}
+	.sale_text {
+	font-size: 1.3em;
+	color: black;
+	}
+	.mobile_menu_footer_plus {
+	   right: -90%;
+	   top: -30px;
+   }
+   .product_img {
+	   margin: 0 auto;
+   }
+   .copyright {
+	   text-align:center;
+	   position: relative;
+	   top: 8em;;
    }
 }
