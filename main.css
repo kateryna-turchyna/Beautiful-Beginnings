@@ -14,12 +14,14 @@ body {
 	padding: 0 4em;
 	border-left: 0.1em solid #E3DEDE;
 	border-right: 0.1em solid #E3DEDE;
+
 }
 
 #main_container {
 	border-bottom: 10px solid transparent;
 	border-image: url(color_stripe.jpg) 400 stretch;
-
+	border-left: 0.1em solid #E3DEDE;
+	border-right: 0.1em solid #E3DEDE;
 }
 
 ul {
@@ -83,7 +85,13 @@ h3 {
 	left: 190px;
 }
 
-.input-group {
+.send_button {
+	position: relative;
+	left: 1em;
+	height: 2.2em;
+}
+
+input {
 	outline: 0.1em solid #E3DEDE;
 	outline-offset: 0.2em;
 }
@@ -136,11 +144,22 @@ li {
 	border-bottom: 0.1em solid #E3DEDE;
 }
 
+#header-middle {
+	margin-top: 1em;
+}
+
 #main-navigation ul li:hover {
 	background-color: #F0F0F0;
 	
 }
-.nav>li>a {
+
+.glyphicon-shopping-cart {
+	position: relative;
+	top: -1.8em;
+	left: 75%;
+}
+
+.nav > li > a {
 	padding: 1em 0.8em;
 }
 
@@ -155,6 +174,11 @@ li {
 .navbar-default {
 	border: 0px solid transparent;
 	background-color: transparent; 
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #fff;
+	color: #000;
 }
 
 img.banner {
@@ -203,9 +227,6 @@ img.banner {
 
 .featured_text {
 	font-size: 1.6em;
-}
-.about_us {
-	padding: 1em;
 }
 
 .form-control {
@@ -262,10 +283,15 @@ img.banner {
    }
    
    #social_media {
-	   width :100%;
-	   float: none;
+	  text-align: center;
+	  text-justify: inter-ideograph;
    }
-   
+   i.fa {
+	   padding: 0 0.3em;
+   }
+	.mobile_social_and_newsletter {
+		padding: 0;
+	}
    .mobile_menu_footer_plus {
 	   right: -90%;
 	   top: -30px;
@@ -278,7 +304,7 @@ img.banner {
    .sale {
 	   position: static;
 	   width: 100%;
-	   max-height: 35em;
+	   max-height: 7em;;
    }
    
    .small-logo {
@@ -308,6 +334,17 @@ img.banner {
 		right: 0px;
 		top: 0px;
    }
+  
+  
+  #check_out {
+	  display: none;
+  }
+  
+  ul.checkout-information {
+	  position: relative;
+	  top: 10em;
+	  
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -331,4 +368,33 @@ img.banner {
 	   position: relative;
 	   top: 8em;;
    }
+   #social_media {
+	  text-align: center;
+	  text-justify: inter-ideograph;
+   }
+   .navbar-toggle {
+		position: fixed;
+		right: 0px;
+		top: 0px;
+   }
+   i.fa {
+	   padding: 0 0.3em;
+   }
+	.mobile_social_and_newsletter {
+		padding: 0;
+	}
+	
+	.featured_text {
+		position: relative;
+		top: 3em;
+	}
+	h3.featured_text {
+		font-size: 2em;
+	}
+	button.featured_text {
+		font-size: 1em;
+	}
+	.input-group {
+		margin-bottom: 1em;
+	}
 }
