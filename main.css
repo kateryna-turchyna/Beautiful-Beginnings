@@ -1,6 +1,6 @@
-/*header styles*/
+/*main styles*/
 body {
-	background-image: url("background.jpg");
+	background: linear-gradient(to top, rgba(240,240,240,0.7), rgba(255,255,255,0)), url("background.jpg");
 	font-family: Georgia, serif;
 }
 
@@ -14,14 +14,19 @@ body {
 	padding: 0 4em;
 	border-left: 0.1em solid #E3DEDE;
 	border-right: 0.1em solid #E3DEDE;
-
 }
 
 #main_container {
-	border-bottom: 10px solid transparent;
-	border-image: url(color_stripe.jpg) 400 stretch;
 	border-left: 0.1em solid #E3DEDE;
 	border-right: 0.1em solid #E3DEDE;
+	border-bottom: none;
+}
+.main_container_border {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 10px solid transparent;
+	border-image: url(color_stripe.jpg) 400 stretch;
 }
 
 ul {
@@ -229,6 +234,10 @@ img.banner {
 	font-size: 1.6em;
 }
 
+.featured_button_text {
+	font-size: 1em;
+}
+
 .form-control {
 	background: -webkit-linear-gradient(bottom, rgba(216,216,216,1), rgba(255,255,255,1)); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(bottom,rgba(216,216,216,1), rgba(255,255,255,1)); /* For Opera 11.1 to 12.0 */
@@ -261,6 +270,9 @@ img.banner {
 	font-size:30px;
 	padding: 0.1em;
 }
+.footer_menu li {
+	display: block!important;
+}
 
 .small-logo {
 	 position: relative;
@@ -271,7 +283,15 @@ img.banner {
 	border: none;
 	background: transparent;
 }
-
+.phone_number {
+	padding: 1em 0;
+}
+footer {
+	background: -webkit-linear-gradient(bottom, rgba(255,255,255,1), rgba(216,216,216,0.3),rgba(255,255,255,1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom,rgba(255,255,255,1), rgba(216,216,216,0.3),rgba(255,255,255,1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom, rgba(255,255,255,1), rgba(216,216,216,0.3),rgba(255,255,255,1)); /* For Firefox 3.6 to 15 */
+     background: linear-gradient(to right, rgba(255,255,255,1), rgba(216,216,216,0.3),rgba(255,255,255,1)); /* Standard syntax (must be last) */
+}
 /*media queries*/
 @media only screen and (max-width: 768px) {
 	.container {
@@ -330,11 +350,10 @@ img.banner {
    }
    
    .navbar-toggle {
-		position: fixed;
+		position: absolute;
 		right: 0px;
 		top: 0px;
    }
-  
   
   #check_out {
 	  display: none;
@@ -343,8 +362,13 @@ img.banner {
   ul.checkout-information {
 	  position: relative;
 	  top: 10em;
-	  
   }
+  
+  .featured_products {
+	  margin-top: 1.5em;
+	  margin-bottom: 1.5em;
+  }
+
 }
 
 @media only screen and (max-width: 992px) {
@@ -384,10 +408,6 @@ img.banner {
 		padding: 0;
 	}
 	
-	.featured_text {
-		position: relative;
-		top: 3em;
-	}
 	h3.featured_text {
 		font-size: 2em;
 	}
