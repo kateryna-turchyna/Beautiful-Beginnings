@@ -1,4 +1,5 @@
 /*main styles*/
+
 body {
 	background: linear-gradient(to top, rgba(240,240,240,0.7), rgba(255,255,255,0)), url("background.jpg");
 	font-family: Georgia, serif;
@@ -162,6 +163,7 @@ li {
 	position: relative;
 	top: -1.8em;
 	left: 75%;
+	width: 2em;
 }
 
 .nav > li > a {
@@ -293,7 +295,7 @@ footer {
      background: linear-gradient(to right, rgba(255,255,255,1), rgba(216,216,216,0.3),rgba(255,255,255,1)); /* Standard syntax (must be last) */
 }
 /*media queries*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 576px) {
 	.container {
 		width: 100%;
 	}
@@ -343,10 +345,10 @@ footer {
    }
    
    .ae_logo {
-	display :block;
-	 margin: 0 auto;
-	 position: relative;
-	 top: 3em;
+		display :block;
+		margin: 0 auto;
+		position: relative;
+		top: 3em;
    }
    
    .navbar-toggle {
@@ -360,8 +362,13 @@ footer {
   }
   
   ul.checkout-information {
-	  position: relative;
-	  top: 10em;
+	position: relative;
+	top: 10em;
+	left: -20%;
+  }
+  
+  #login {
+	  border: none;
   }
   
   .featured_products {
@@ -371,7 +378,7 @@ footer {
 
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
 	.sale_text_header {
 	font-size: 2.5em;
 	text-shadow: 1px 1px white;
