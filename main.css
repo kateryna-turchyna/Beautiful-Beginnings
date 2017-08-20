@@ -425,3 +425,8 @@ footer {
 		margin-bottom: 1em;
 	}
 }
+/*Our brands page*/
+.brands_img {
+	margin: 0 auto;
+	float: none;
+}
